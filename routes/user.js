@@ -7,7 +7,7 @@ const path = require('path')
 // PUT - add favouritePetMinder --------------------------------------
 router.put('/addFavPetminder/', Utils.authenticateToken, (req, res) => {  
   // validate check
-  if(!req.body.haircutId){
+  if(!req.body.petminderId){
     return res.status(400).json({
       message: "No petminder specified"
     })
